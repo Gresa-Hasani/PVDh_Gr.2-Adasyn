@@ -1,0 +1,5 @@
+﻿size_class,train_before_ADASYN,train_after_ratio_0.05,train_after_ratio_0.1,train_after_ratio_1.0,test_original,train_before_ADASYN_%,train_after_ratio_0.05_%,train_after_ratio_0.1_%,train_after_ratio_1.0_%,test_original_%
+0-9,187408,187408,187408,187408,80318,98.448,87.086,76.963,24.991,98.447
+10-49,2505,8989,18661,187631,1074,1.316,4.177,7.664,25.02,1.316
+50-249,384,9442,18710,187483,165,0.202,4.388,7.684,25.001,0.202
+250-,66,9361,18725,187393,28,0.035,4.35,7.69,24.989,0.034

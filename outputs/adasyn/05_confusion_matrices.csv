@@ -1,0 +1,37 @@
+﻿model,training_set,true,0-9,10-49,50-249,250-
+Logistic Regression,Baseline,0-9,80310,8,0,0
+Logistic Regression,Baseline,10-49,1067,7,0,0
+Logistic Regression,Baseline,50-249,159,4,0,2
+Logistic Regression,Baseline,250-,26,0,0,2
+Decision Tree,Baseline,0-9,80277,33,8,0
+Decision Tree,Baseline,10-49,1043,24,6,1
+Decision Tree,Baseline,50-249,138,5,18,4
+Decision Tree,Baseline,250-,24,0,2,2
+Random Forest,Baseline,0-9,80312,5,1,0
+Random Forest,Baseline,10-49,1066,8,0,0
+Random Forest,Baseline,50-249,163,1,1,0
+Random Forest,Baseline,250-,27,0,1,0
+Logistic Regression,ADASYN full (1.0),0-9,56557,17550,4817,1394
+Logistic Regression,ADASYN full (1.0),10-49,254,439,259,122
+Logistic Regression,ADASYN full (1.0),50-249,12,39,73,41
+Logistic Regression,ADASYN full (1.0),250-,1,6,9,12
+Decision Tree,ADASYN full (1.0),0-9,56884,18150,3796,1488
+Decision Tree,ADASYN full (1.0),10-49,317,471,180,106
+Decision Tree,ADASYN full (1.0),50-249,29,46,46,44
+Decision Tree,ADASYN full (1.0),250-,2,6,12,8
+Random Forest,ADASYN full (1.0),0-9,72342,6577,1206,193
+Random Forest,ADASYN full (1.0),10-49,642,325,97,10
+Random Forest,ADASYN full (1.0),50-249,56,62,39,8
+Random Forest,ADASYN full (1.0),250-,6,10,10,2
+Logistic Regression,ADASYN CV-selected,0-9,79519,1,336,462
+Logistic Regression,ADASYN CV-selected,10-49,915,1,80,78
+Logistic Regression,ADASYN CV-selected,50-249,104,1,28,32
+Logistic Regression,ADASYN CV-selected,250-,13,0,3,12
+Decision Tree,ADASYN CV-selected,0-9,79429,196,367,326
+Decision Tree,ADASYN CV-selected,10-49,917,36,57,64
+Decision Tree,ADASYN CV-selected,50-249,105,5,24,31
+Decision Tree,ADASYN CV-selected,250-,12,2,9,5
+Random Forest,ADASYN CV-selected,0-9,79416,397,380,125
+Random Forest,ADASYN CV-selected,10-49,916,86,61,11
+Random Forest,ADASYN CV-selected,50-249,99,20,37,9
+Random Forest,ADASYN CV-selected,250-,14,4,5,5

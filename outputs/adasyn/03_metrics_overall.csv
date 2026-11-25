@@ -1,0 +1,10 @@
+﻿model,training_set,target_ratio,n_train,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,roc_auc_macro,precision_weighted,recall_weighted,f1_weighted,roc_auc_weighted
+Logistic Regression,Baseline,0.0,190363,0.9845,0.2695,0.4633,0.2695,0.2825,0.8805,0.9744,0.9845,0.977,0.8335
+Decision Tree,Baseline,0.0,190363,0.9845,0.3006,0.5469,0.3006,0.3324,0.717,0.9762,0.9845,0.9779,0.7505
+Random Forest,Baseline,0.0,190363,0.9845,0.2534,0.4723,0.2534,0.2547,0.8679,0.9775,0.9845,0.977,0.8245
+Logistic Regression,ADASYN full (1.0),1.0,749915,0.6997,0.496,0.2604,0.496,0.2283,0.8226,0.9802,0.6997,0.8127,0.8289
+Decision Tree,ADASYN full (1.0),1.0,749915,0.7037,0.4278,0.2589,0.4278,0.2266,0.7053,0.9788,0.7037,0.8149,0.7729
+Random Forest,ADASYN full (1.0),1.0,749915,0.8912,0.3778,0.2688,0.3778,0.273,0.8449,0.9757,0.8912,0.9299,0.8175
+Logistic Regression,ADASYN CV-selected,0.05,215200,0.9752,0.3973,0.3509,0.3973,0.2803,0.8747,0.9764,0.9752,0.9735,0.8301
+Decision Tree,ADASYN CV-selected,0.05,215200,0.9744,0.3366,0.3005,0.3366,0.2855,0.7137,0.9739,0.9744,0.9736,0.7873
+Random Forest,ADASYN CV-selected,0.1,243504,0.975,0.3679,0.3167,0.3679,0.3168,0.8684,0.9743,0.975,0.9743,0.8286

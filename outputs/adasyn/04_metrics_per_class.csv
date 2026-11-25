@@ -1,0 +1,37 @@
+﻿model,training_set,target_ratio,size_class,precision,recall,f1,support
+Logistic Regression,Baseline,0.0,0-9,0.9846,0.9999,0.9922,80318
+Logistic Regression,Baseline,0.0,10-49,0.3684,0.0065,0.0128,1074
+Logistic Regression,Baseline,0.0,50-249,0.0,0.0,0.0,165
+Logistic Regression,Baseline,0.0,250-,0.5,0.0714,0.125,28
+Decision Tree,Baseline,0.0,0-9,0.9852,0.9995,0.9923,80318
+Decision Tree,Baseline,0.0,10-49,0.3871,0.0223,0.0423,1074
+Decision Tree,Baseline,0.0,50-249,0.5294,0.1091,0.1809,165
+Decision Tree,Baseline,0.0,250-,0.2857,0.0714,0.1143,28
+Random Forest,Baseline,0.0,0-9,0.9846,0.9999,0.9922,80318
+Random Forest,Baseline,0.0,10-49,0.5714,0.0074,0.0147,1074
+Random Forest,Baseline,0.0,50-249,0.3333,0.0061,0.0119,165
+Random Forest,Baseline,0.0,250-,0.0,0.0,0.0,28
+Logistic Regression,ADASYN full (1.0),1.0,0-9,0.9953,0.7042,0.8248,80318
+Logistic Regression,ADASYN full (1.0),1.0,10-49,0.0243,0.4088,0.0459,1074
+Logistic Regression,ADASYN full (1.0),1.0,50-249,0.0142,0.4424,0.0274,165
+Logistic Regression,ADASYN full (1.0),1.0,250-,0.0076,0.4286,0.015,28
+Decision Tree,ADASYN full (1.0),1.0,0-9,0.9939,0.7082,0.8271,80318
+Decision Tree,ADASYN full (1.0),1.0,10-49,0.0252,0.4385,0.0477,1074
+Decision Tree,ADASYN full (1.0),1.0,50-249,0.0114,0.2788,0.0219,165
+Decision Tree,ADASYN full (1.0),1.0,250-,0.0049,0.2857,0.0096,28
+Random Forest,ADASYN full (1.0),1.0,0-9,0.9904,0.9007,0.9434,80318
+Random Forest,ADASYN full (1.0),1.0,10-49,0.0466,0.3026,0.0808,1074
+Random Forest,ADASYN full (1.0),1.0,50-249,0.0288,0.2364,0.0514,165
+Random Forest,ADASYN full (1.0),1.0,250-,0.0094,0.0714,0.0166,28
+Logistic Regression,ADASYN CV-selected,0.05,0-9,0.9872,0.9901,0.9886,80318
+Logistic Regression,ADASYN CV-selected,0.05,10-49,0.3333,0.0009,0.0019,1074
+Logistic Regression,ADASYN CV-selected,0.05,50-249,0.0626,0.1697,0.0915,165
+Logistic Regression,ADASYN CV-selected,0.05,250-,0.0205,0.4286,0.0392,28
+Decision Tree,ADASYN CV-selected,0.05,0-9,0.9871,0.9889,0.988,80318
+Decision Tree,ADASYN CV-selected,0.05,10-49,0.1506,0.0335,0.0548,1074
+Decision Tree,ADASYN CV-selected,0.05,50-249,0.0525,0.1455,0.0772,165
+Decision Tree,ADASYN CV-selected,0.05,250-,0.0117,0.1786,0.022,28
+Random Forest,ADASYN CV-selected,0.1,0-9,0.9872,0.9888,0.988,80318
+Random Forest,ADASYN CV-selected,0.1,10-49,0.1696,0.0801,0.1088,1074
+Random Forest,ADASYN CV-selected,0.1,50-249,0.0766,0.2242,0.1142,165
+Random Forest,ADASYN CV-selected,0.1,250-,0.0333,0.1786,0.0562,28
