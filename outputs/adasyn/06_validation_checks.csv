@@ -1,0 +1,40 @@
+﻿check,passed,detail,training_set
+Train and test rows are disjoint,True,"190,363 train / 81,585 test",ADASYN ratio 0.05
+Every class is present in both sets,True,,ADASYN ratio 0.05
+Test set was not resampled (same size and class counts as after the split),True,,ADASYN ratio 0.05
+Original training rows are unchanged inside the ADASYN set,True,,ADASYN ratio 0.05
+Synthetic rows only belong to minority classes,True,,ADASYN ratio 0.05
+Synthetic rows that coincide with a test row (feature vector),True,"informational: 322 of 24,837 synthetic (1.3%) vs 64,712 of 190,363 ORIGINAL train rows (34.0%). Features are mostly discrete, so equal vectors occur naturally; ADASYN is fitted without the test set",ADASYN ratio 0.05
+No employee-based feature is used,True,"['Nr. punëtorëve', 'log_employees', 'flag_employees_imputed']",ADASYN ratio 0.05
+"Same feature columns, same order (train / test / ADASYN)",True,,ADASYN ratio 0.05
+No missing values in the model matrices,True,,ADASYN ratio 0.05
+Synthetic one-hot groups have exactly one 1,True,,ADASYN ratio 0.05
+Synthetic binary / integer columns are whole numbers,True,,ADASYN ratio 0.05
+Synthetic owners_total = Total M + Total F,True,,ADASYN ratio 0.05
+Synthetic age <= time from registration date to the reference date,True,0 violations (real rows: within Part I's 2-decimal rounding),ADASYN ratio 0.05
+Train and test rows are disjoint,True,"190,363 train / 81,585 test",ADASYN ratio 0.1
+Every class is present in both sets,True,,ADASYN ratio 0.1
+Test set was not resampled (same size and class counts as after the split),True,,ADASYN ratio 0.1
+Original training rows are unchanged inside the ADASYN set,True,,ADASYN ratio 0.1
+Synthetic rows only belong to minority classes,True,,ADASYN ratio 0.1
+Synthetic rows that coincide with a test row (feature vector),True,"informational: 735 of 53,141 synthetic (1.4%) vs 64,712 of 190,363 ORIGINAL train rows (34.0%). Features are mostly discrete, so equal vectors occur naturally; ADASYN is fitted without the test set",ADASYN ratio 0.1
+No employee-based feature is used,True,"['Nr. punëtorëve', 'log_employees', 'flag_employees_imputed']",ADASYN ratio 0.1
+"Same feature columns, same order (train / test / ADASYN)",True,,ADASYN ratio 0.1
+No missing values in the model matrices,True,,ADASYN ratio 0.1
+Synthetic one-hot groups have exactly one 1,True,,ADASYN ratio 0.1
+Synthetic binary / integer columns are whole numbers,True,,ADASYN ratio 0.1
+Synthetic owners_total = Total M + Total F,True,,ADASYN ratio 0.1
+Synthetic age <= time from registration date to the reference date,True,0 violations (real rows: within Part I's 2-decimal rounding),ADASYN ratio 0.1
+Train and test rows are disjoint,True,"190,363 train / 81,585 test",ADASYN ratio 1.0
+Every class is present in both sets,True,,ADASYN ratio 1.0
+Test set was not resampled (same size and class counts as after the split),True,,ADASYN ratio 1.0
+Original training rows are unchanged inside the ADASYN set,True,,ADASYN ratio 1.0
+Synthetic rows only belong to minority classes,True,,ADASYN ratio 1.0
+Synthetic rows that coincide with a test row (feature vector),True,"informational: 7,585 of 559,552 synthetic (1.4%) vs 64,712 of 190,363 ORIGINAL train rows (34.0%). Features are mostly discrete, so equal vectors occur naturally; ADASYN is fitted without the test set",ADASYN ratio 1.0
+No employee-based feature is used,True,"['Nr. punëtorëve', 'log_employees', 'flag_employees_imputed']",ADASYN ratio 1.0
+"Same feature columns, same order (train / test / ADASYN)",True,,ADASYN ratio 1.0
+No missing values in the model matrices,True,,ADASYN ratio 1.0
+Synthetic one-hot groups have exactly one 1,True,,ADASYN ratio 1.0
+Synthetic binary / integer columns are whole numbers,True,,ADASYN ratio 1.0
+Synthetic owners_total = Total M + Total F,True,,ADASYN ratio 1.0
+Synthetic age <= time from registration date to the reference date,True,0 violations (real rows: within Part I's 2-decimal rounding),ADASYN ratio 1.0

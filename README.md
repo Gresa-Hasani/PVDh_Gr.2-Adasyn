@@ -111,20 +111,44 @@ python -m part1_preprocessing
 
 The pipeline uses a fixed random seed (`42`) for sampling and mutual-information estimation. Outputs are written relative to the repository root, so the module should be run from that directory.
 
+## ADASYN: class-imbalance experiment
+
+`python -m adasyn_balancing` (after Part I) applies **ADASYN** oversampling to a multiclass task: predicting the EU size class (`Madhësia`) **without** any employee-based feature. The task is highly imbalanced: 98.45% of businesses are in "0-9" and 0.03% in "250-".
+
+- The data is split 70/30 (stratified) **before** any preprocessing. ADASYN (`imblearn`, k = 5, seed 42) is applied to the training set only.
+- Only the numeric features are scaled for the neighbour search.
+- Synthetic rows are repaired to valid one-hot, binary and integer values and to consistent registration dates and ages.
+- Three settings are compared on the same untouched test set: no resampling, full balancing (ratio 1.0, reference), and a milder ratio chosen by 3-fold cross-validation **inside the training set** (0.05–0.10).
+- 13 leakage and consistency checks run for every ADASYN training set, and 13 unit tests cover the resampler (`python -m unittest discover -s tests`).
+
+Results on the test set:
+- **Minority recall rises.** Balanced accuracy improves in every ADASYN setting: from 0.27 to 0.40 (CV ratio) or 0.50 (full balancing) for Logistic Regression, and from 0.25 to 0.37–0.38 for Random Forest.
+- **Precision is the cost.** Full balancing causes 8,000–24,000 false alarms and accuracy of 0.70–0.89. The CV-selected ratio keeps accuracy at about 0.975.
+- **Overall performance does not improve in general.** Macro F1 improves only for Random Forest with the CV ratio (0.255 → 0.317), and ROC-AUC does not improve.
+- **Synthetic samples are not real observations.** At full balance, the 66 real "250-" businesses produce about 187,000 synthetic points.
+
+Full method, audit, corrections and limitations: [docs/ADASYN.md](docs/ADASYN.md). Outputs: `outputs/adasyn/`.
+
+![Baseline vs ADASYN](outputs/adasyn/fig02_metrics_baseline_vs_adasyn.png)
+
 ## Repository layout
 
 ```text
+adasyn_balancing/         ADASYN oversampling experiment (train-only resampling, models, report)
 common/                   Shared schema, configuration, constants, and helpers
 data/
   external/               Municipality population input
   raw/                    ARBK source workbook (Git LFS)
   processed/              Generated datasets (ignored)
+docs/ADASYN.md            ADASYN method, results and discussion
+outputs/adasyn/           ADASYN tables and figures
 outputs/part1/            Tracked report tables and figures
 part1_preprocessing/      Fourteen-stage preprocessing pipeline
 requirements.txt          Python dependencies
+tests/                    Unit tests for the ADASYN step
 ```
 
-Only Part I is currently implemented and documented in this repository. `outputs/part2/`, `outputs/part3/`, and `powerbi/` are reserved for later analysis and visualization work.
+Part I and the ADASYN experiment are implemented and documented in this repository. `outputs/part2/`, `outputs/part3/`, and `powerbi/` are reserved for later analysis and visualization work.
 
 ## License
 
